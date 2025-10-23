@@ -1,7 +1,7 @@
 body{
   font-family: sans-serif;
   margin: 0;
-  background-image: url(bg1.jpg);
+  background-image: url(public/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -43,10 +43,39 @@ body{
 .image-details{
   text-align: center;
   padding: 2rem;
+  color: white;
+
 }
 .image-details img{
   width: 60%;
+  max-width: 900px;
+  height: auto;
   border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+} 
+.image-details img:hover{
+  transform: scale(1.05);
+}
+@media (max-width:16rem) {
+  .image-details img{
+    width: 90%;
+  }
+  
+  
+}
+.download-btn{
+  background-color: aquamarine;
+  display: inline-block;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition:background-color 0.3s ease;
+}
+.download-btn:hover{
+  background-color: aqua;
 }
 .image-card img{
   width: 100%;
