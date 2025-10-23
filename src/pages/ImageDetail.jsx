@@ -24,10 +24,10 @@ function ImageDetail(){
 
     return(
         <div className="image-details">
-            <image src={ImageUrl} alt={title}/>
+            {ImageUrl&&<img src={ImageUrl} alt={title} className="details-image"/>}
             <h2>{title}</h2>
             <p>{description}</p>
-            <a href={ImageUrl}download><button>DOWNLOAD IMAGE</button></a>
+            <a href={ImageUrl}download target="_blank" rel="noopener noreferrer" className="download-btn">Download Image</a>
         </div>
     );
 
